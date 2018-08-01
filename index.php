@@ -1,6 +1,8 @@
 <?php
-  function calcul($number1, $number2, $number3){
-    echo $number1 + $number2 + $number3;
+//fonction calcul avec les parametre par défaut
+  function calculate($number1 = 125, $number2 = 25, $number3 = 364){
+    $result = $number1 + $number2 + $number3;
+    return $result;
   }
 ?>
 <!DOCTYPE html>
@@ -11,7 +13,8 @@
   </head>
   <body>
     <p>
-<?= calcul(125,25,364); ?>
+
+<?= calculate(10,10,10); //Affichage avec de nouvelles variables ?>
     </p>
   </body>
 </html>
